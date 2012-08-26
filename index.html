@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/distance.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span5">
+        <img src="assets/img/swinburne.jpg"/>
+        <h1>How far are we?!</h1>
+        <p>This calculator measures the distance from the GeoLocation provided to Swinburne University of Technology</p>
+        </div>
+        <div class="span5">
+          <form class="form-horizontal" id="geoloc">
+            <h1>GeoLocation</h1>
+            <fieldset>
+              <div class="control-group" id="latgroup">
+                <label class="control-label" for="lat">Lat:</label>
+                <div class="controls">
+                  <input type="number" class="input-xlarge" id="lat">
+                  <p class="help-block">Lattitude</p>
+                </div>
+              </div>
+              <div class="control-group" id="longroup">
+                <label class="control-label" for="long">Long:</label>
+                <div class="controls">
+                  <input type="number" class="input-xlarge" id="lon">
+                  <p class="help-block">Longitude</p>
+                </div>
+              </div>
+            </fieldset>
+            <button type="button" id="btnsubmit" class="btn btn-primary pull-right btn-large"><i class='icon-globe icon-white'></i> Find out!</button>
+          </form>
+        </div>
+      </div>
+    <div class="modal hide" id="resultModal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h3>Distance from Swinburne</h3>
+      </div>
+      <div class="modal-body">
+        <p>var swinLat = -37.8212633; //latitude of swin</p>
+        <p>var swinLon = 145.0400497; //longitude of swin</p>
+        <p>Radius of the Earth = 6373</p>
+
+        <strong>Latitude input: <span id="resultLat"></span></strong><br/>
+        <strong>Longitude input: <span id="resultLon"></span></strong><br/>
+        <strong>Distance: <span id="resultKM"></span>KM</strong>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+      </div>
+    </div>
+    <hr/>
+
+      <footer>
+        <p>Software Deployment and Evolution Assignment 1</p>
+        <p>Stephen Andreou - 6508537</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/distance.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
